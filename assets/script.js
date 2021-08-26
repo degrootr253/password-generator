@@ -36,22 +36,22 @@ function generatePassword() {
 
   if (uppers) 
   allowed.uppers = "QWERTYUIOPASDFGHJKLZXCVBNM";
-  upArray = allowed.uppers.split("");
+  upArray = allowed.uppers.split(" ");
 
 
 
   if (lowers) 
   allowed.lowers = "qwertyuiopasdfghjklzxcvbnm";
-  lowArray = allowed.lowers.split("");
+  lowArray = allowed.lowers.split(" ");
   
 
   if (numbers)
   allowed.numbers = "123456789";
-  numArray = allowed.numbers.split("");
+  numArray = allowed.numbers.split(" ");
   
   if (symbols) 
   allowed.symbols = "!@#$%^&*()_+=-{}[]?<>";
-  symbolArray= allowed.symbols.split("");
+  symbolArray= allowed.symbols.split(" ");
 
   password = upArray + lowArray + numArray + symbolArray
   
